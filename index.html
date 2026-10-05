@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zeynep Gözütok — Portfolio 2026</title>
+<meta name="description" content="Art direction, branding, illustration, event & editorial design. Welcome to my brain.">
+<meta property="og:title" content="Zeynep Gözütok — Portfolio 2026">
+<meta property="og:description" content="Art direction, branding, illustration, event & editorial design. Welcome to my brain.">
+<meta property="og:image" content="https://zeyneepgozutok.github.io/images/og.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23EFF0EC'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Georgia,serif' font-style='italic' font-size='40' fill='%232F3BD6'%3Ez%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#EFF0EC; --ink:#141414; --blue:#2F3BD6; --muted:#6b6b66; --line:#d9dad4;
+    --serif:"Instrument Serif", Georgia, serif;
+    --mono:"JetBrains Mono", ui-monospace, monospace;
+    --hand:"Caveat", cursive;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:64px}
+  body{background:var(--cream);color:var(--ink);font-family:var(--mono);font-size:13px;line-height:1.5;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+
+  /* nav */
+  .nav{position:sticky;top:0;z-index:10;display:flex;align-items:center;gap:24px;
+       padding:14px 24px;background:rgba(239,240,236,.9);backdrop-filter:blur(8px);
+       border-bottom:1px solid var(--line)}
+  .brand{font-family:var(--serif);font-size:24px;line-height:1;text-decoration:none;white-space:nowrap}
+  .brand i{color:var(--blue)}
+  .links{display:flex;gap:18px;overflow-x:auto;scrollbar-width:none;margin-left:auto}
+  .links::-webkit-scrollbar{display:none}
+  .links a{text-decoration:none;text-transform:uppercase;letter-spacing:.06em;font-size:11px;white-space:nowrap;color:var(--muted);transition:color .2s}
+  .links a:hover,.links a.on{color:var(--blue)}
+  .cta{font-size:11px;text-transform:uppercase;letter-spacing:.06em;text-decoration:none;
+       border:1px solid var(--ink);border-radius:999px;padding:6px 14px;white-space:nowrap;transition:.2s}
+  .cta:hover{background:var(--blue);border-color:var(--blue);color:#fff}
+
+  /* pages */
+  main{max-width:1400px;margin:0 auto;padding:24px 24px 0}
+  section{margin-bottom:56px}
+  .label{display:flex;align-items:baseline;gap:10px;margin:0 0 12px;padding-top:8px;font-size:11px}
+  .label .num{color:var(--blue)}
+  .label h2{font-family:var(--mono);font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:.08em}
+  .label h2 i{font-style:normal}
+  .label::after{content:"";flex:1;height:1px;background:var(--line);align-self:center}
+  .label .note{font-family:var(--hand);font-size:22px;color:var(--blue);margin-left:auto;transform:rotate(-2deg)}
+  .page{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#e4e5e0;object-fit:cover}
+  .page + .page{margin-top:0}
+  #cover .page:first-child{margin-top:0}
+
+  /* contact */
+  .contact{text-align:center;padding:48px 0 72px}
+  .contact .hi{font-family:var(--hand);font-size:34px;color:var(--blue);margin-bottom:10px}
+  .contact a.big{display:inline-block;font-family:var(--serif);font-size:clamp(28px,5vw,56px);line-height:1.15;text-decoration:none;border-bottom:1px solid transparent;transition:.2s}
+  .contact a.big:hover{color:var(--blue);border-color:var(--blue)}
+  .contact .row .cta{margin-left:0}
+  .contact .row{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}
+  footer{border-top:1px solid var(--line);padding:18px 24px;display:flex;justify-content:space-between;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+
+  @media (max-width:720px){
+    .nav{padding:12px 16px;gap:14px}
+    .links{display:none}
+    .cta{margin-left:auto}
+    .nav .cta{margin-left:auto}
+    main{padding:16px 0 0}
+    .label{padding:8px 16px 0}
+    .label .note{display:none}
+    footer{padding:16px;flex-direction:column;gap:6px}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top">Zeynep <i>Gözütok</i></a>
+  <nav class="links" aria-label="Sections">
+    <a href="#about">About</a>
+    <a href="#logofolio">Logofolio</a>
+    <a href="#branding">Branding</a>
+    <a href="#event">Event</a>
+    <a href="#illustration">Illustration</a>
+    <a href="#social">Social</a>
+    <a href="#editorial">Editorial</a>
+    <a href="#photography">Photography</a>
+  </nav>
+  <a class="cta" href="#contact">Say hi</a>
+</header>
+
+<main id="top">
+
+  <section id="cover">
+    <img class="page" src="images/01_cover.gif" alt="Portfolio 2026 — Zeynep Gözütok, cover" fetchpriority="high">
+    <img class="page" src="images/02_contents.gif" alt="Contents" loading="lazy">
+  </section>
+
+  <section id="about">
+    <div class="label"><span class="num">01</span><h2>About <i>me</i></h2></div>
+    <img class="page" src="images/03_about.gif" alt="About me" loading="lazy">
+    <img class="page" src="images/04_about_2.jpg" alt="About me, experience" loading="lazy">
+    <img class="page" src="images/05_skills.gif" alt="Skills" loading="lazy">
+  </section>
+
+  <section id="logofolio">
+    <div class="label"><span class="num">02</span><h2><i>Logo</i>folio</h2></div>
+    <img class="page" src="images/06_logofolio.gif" alt="Logofolio" loading="lazy">
+  </section>
+
+  <section id="branding">
+    <div class="label"><span class="num">03</span><h2>Branding <i>projects</i></h2></div>
+    <img class="page" src="images/07_branding.gif" alt="Branding projects" loading="lazy">
+    <img class="page" src="images/08_amuse_1.jpg" alt="Amuse branding" loading="lazy">
+    <img class="page" src="images/09_amuse_2.jpg" alt="Amuse branding, applications" loading="lazy">
+    <img class="page" src="images/10_apero_rebranding.jpg" alt="Apero rebranding" loading="lazy">
+    <img class="page" src="images/11_troia_tusan.jpg" alt="Troia Tusan" loading="lazy">
+    <img class="page" src="images/12_maison_dalp.jpg" alt="Maison d'Alp" loading="lazy">
+    <img class="page" src="images/13_rebeka.jpg" alt="Rebeka" loading="lazy">
+  </section>
+
+  <section id="event">
+    <div class="label"><span class="num">04</span><h2>Event <i>design</i></h2></div>
+    <img class="page" src="images/14_eventdesign.gif" alt="Event design" loading="lazy">
+    <img class="page" src="images/15_retro_funfair_1.jpg" alt="Retro Funfair" loading="lazy">
+    <img class="page" src="images/16_retro_funfair_2.jpg" alt="Retro Funfair, applications" loading="lazy">
+    <img class="page" src="images/17_fifteen_seconds.jpg" alt="Fifteen Seconds" loading="lazy">
+    <img class="page" src="images/18_porland.jpg" alt="Porland" loading="lazy">
+  </section>
+
+  <section id="illustration">
+    <div class="label"><span class="num">05</span><h2><i>Illustrations</i></h2></div>
+    <img class="page" src="images/19_illustrations.gif" alt="Illustrations" loading="lazy">
+    <img class="page" src="images/20_garos.jpg" alt="Garos illustration" loading="lazy">
+    <img class="page" src="images/21_apero_tarif.jpg" alt="Apero recipe illustrations" loading="lazy">
+    <img class="page" src="images/22_soon_illustration.gif" alt="Soon illustration" loading="lazy">
+    <img class="page" src="images/23_illustrations_bar.jpg" alt="Bar illustrations" loading="lazy">
+    <img class="page" src="images/24_album_illustration.gif" alt="Album illustration" loading="lazy">
+  </section>
+
+  <section id="social">
+    <div class="label"><span class="num">06</span><h2>Social <i>media</i></h2></div>
+    <img class="page" src="images/25_social_aposto_1.jpg" alt="Aposto social media" loading="lazy">
+    <img class="page" src="images/26_social_aposto_2.jpg" alt="Aposto social media, more posts" loading="lazy">
+    <img class="page" src="images/27_social_soon.jpg" alt="Soon social media" loading="lazy">
+  </section>
+
+  <section id="editorial">
+    <div class="label"><span class="num">07</span><h2>Editorial <i>design</i></h2></div>
+    <img class="page" src="images/28_editorial_cover.gif" alt="Editorial design" loading="lazy">
+    <video class="page" src="images/29_editorial_aposto.mp4" poster="images/29_poster.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Editorial designs for Aposto"></video>
+    <img class="page" src="images/30_eczacibasi.gif" alt="Aposto x Eczacıbaşı project" loading="lazy">
+  </section>
+
+  <section id="photography">
+    <div class="label"><span class="num">08</span><h2><i>Photography</i></h2></div>
+    <img class="page" src="images/31_photography.gif" alt="Photography" loading="lazy">
+  </section>
+
+  <section id="contact">
+    <img class="page" src="images/32_thank_you.jpg" alt="Let's do smth good together :)" loading="lazy">
+    <div class="contact">
+      <p class="hi">say hi →</p>
+      <a class="big" href="mailto:zeynepgozutok98@gmail.com">zeynepgozutok98@gmail.com</a>
+      <div class="row">
+        <a class="cta" href="https://www.linkedin.com/in/zeynepgztok/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="cta" href="https://www.behance.net/gallery/256673577/Portfolio-2026-Zeynep-Goezuetok" target="_blank" rel="noopener">Behance</a>
+        <a class="cta" href="https://github.com/zeyneepgozutok" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span>© 2026 Zeynep Gözütok</span>
+  <span>Art direction · Branding · Illustration</span>
+</footer>
+
+<script>
+  // highlight the current section in the nav
+  const links=[...document.querySelectorAll('.links a')];
+  const io=new IntersectionObserver(es=>es.forEach(e=>{
+    if(e.isIntersecting){links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id));}
+  }),{rootMargin:'-40% 0px -55% 0px'});
+  document.querySelectorAll('main section[id]').forEach(s=>io.observe(s));
+</script>
+</body>
+</html>
